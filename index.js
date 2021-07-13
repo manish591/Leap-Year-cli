@@ -13,12 +13,7 @@ console.log('                   ');
 
 let birthYear = readLineSync.question('Please input you birthyear in YYYY format!');
 
-if (dateOfBirth.length !== 4) {
-  return console.log(`Hey! ${username}, You didn't enter birth year properly, now refresh to play it again.`);
-}
-
-
-let formatYearInNumber = parseInt(birthyear);
+let formatYearInNumber = parseInt(birthYear);
 function isLeap (year) {
   if(year % 4 === 0) {
     if(year % 100 === 0) {
